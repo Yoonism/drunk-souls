@@ -476,18 +476,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _raycastEngine: {fileID: 381554485}
-  _spriteContainer: {fileID: 684006651}
-  _actorState: 1
-  _legTransform:
-  - {fileID: 1718640253}
-  - {fileID: 1361667115}
-  _legPositionBuffer:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: -1}
+  _stateLibrary:
+  - stateType: 0
+    atrCanMove: 1
+    atrCanAttack: 1
+    atrCanRecieve: 1
+    atrCanDodge: 1
+    atrGrounded: 1
+  - stateType: 1
+    atrCanMove: 1
+    atrCanAttack: 0
+    atrCanRecieve: 1
+    atrCanDodge: 0
+    atrGrounded: 1
+  - stateType: 2
+    atrCanMove: 0
+    atrCanAttack: 0
+    atrCanRecieve: 0
+    atrCanDodge: 0
+    atrGrounded: 1
+  - stateType: 3
+    atrCanMove: 0
+    atrCanAttack: 0
+    atrCanRecieve: 1
+    atrCanDodge: 0
+    atrGrounded: 1
+  stateSet:
+    stateType: 0
+    atrCanMove: 0
+    atrCanAttack: 0
+    atrCanRecieve: 0
+    atrCanDodge: 0
+    atrGrounded: 0
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
